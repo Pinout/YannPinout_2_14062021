@@ -30,10 +30,14 @@
     padding: 0;
 }
 
+.fas {
+    color: #0065fc;
+}
 
 
 
-/* header */
+
+/******************** header ************************/
 header {
     display: flex;
     flex-direction: row;
@@ -90,7 +94,7 @@ a:hover {
 
 
 
-/* Titre */
+/********************* Titre **********************************/
 .navigation {
     display: flex;
     flex-direction: row;
@@ -116,18 +120,16 @@ a:hover {
     display: flex;
     
 }
-
 h1 {
     font-size: large;
 }
-
 p {
     font-size: small;
 }
 
 
 
-/* Barre de recherche */
+/********************* Barre de recherche **********************/
 #search_section {
     display: flex;
     height: 40px;
@@ -138,10 +140,9 @@ p {
     justify-content: flex-start;
 }
 .gps_logo {
-    
     position: relative;
     height: 40px;
-    background-color: #e2e1e1;
+    background-color: #F2F2F2;
     width: 54px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -151,6 +152,7 @@ p {
     border: none;
     padding-left: 10px;
     font-size: 1em;
+    font-weight: bold;
   }
 .fa-map-marker-alt {
     position: absolute;
@@ -163,12 +165,100 @@ p {
     background-color: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 30%;
+    width: 40%;
     height: 40px;
     border: none;
     color: white;
     outline: none;
     
+}
+
+
+/********************* Filtres **********************/
+#filtres_section {
+    display: flex;
+    align-items: center;
+    margin: 32px 0px 41px 0px;
+}
+
+.titre_filtres p {
+    font-weight: bold;
+}
+.filtre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtre p {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    padding: 0px 25px 0px 65px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.filtre_bouton {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 25px;
+    flex-wrap: wrap;
+
+}
+
+.filtre_bouton:hover {
+    text-decoration: underline;
+    color: #0065FC;
+}
+
+.circle_icon_filter {
+    width: 40px;
+    height: 40px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    left: 1px;
+}
+
+.i_logo {
+    display: flex;
+    color: #0065fc;
+    padding: 6px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border: solid 1px #f2f2f2;
+    border-radius: 30px;
+    justify-content: flex-start;
+    margin-right: 10px;
+  }
+  
+.city_info {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.fa-money-bill-wave,
+.fa-male,
+.fa-heart,
+.fa-dog {
+    color: #0065FC;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: small;
+    
+    font-weight: normal;
+}
+.nombre_logements {
+    margin: 0px 0px 35px 17px;
 }
 
 
