@@ -19,7 +19,7 @@
     font-family: "Raleway";
   }
 
-.container{
+main@{
     max-width: 1500px;
     display: flex;
     flex-direction: column;
@@ -76,14 +76,6 @@ a{
     text-decoration: none;
     color: black;
     font-style: normal;
-}
-
-
-.hebergements-activites{
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
 }
 a:hover{
     text-decoration: #0065FC;
@@ -174,12 +166,16 @@ p{
     outline: none;
     
 }
+.loupe{
+    display: none;
+}
 
 
 /********************* Filtres **********************/
 #filtres_section{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 32px 0px 41px 0px;
 }
 
@@ -378,7 +374,7 @@ h3{
     color: black;
 }
 
-#container_hebergements_populaires{
+#les_plus_populaires{
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -386,9 +382,10 @@ h3{
     padding: 40px 40px 40px 40px;
     width: 318px;
     max-width: 400px;
+    margin-bottom: auto;
 }
 
-.hebergement_les_plus_populaires{
+.hebergements_les_plus_populaires{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -512,7 +509,7 @@ h3{
     margin-left: 20px;
 }
 
-@media all and (min-width : 1300px) and (max-width : 2560px) {
+@media screen and (min-width : 1300px) and (max-width : 2560px) {
 
 
     .photo_activite11,
@@ -588,27 +585,150 @@ footer li:hover{
 }
   
 /*********** Téléphones et tablettes ***********/
-@media screen and (max-width: 500px){
-    .container{
-        max-width: 500px
+
+
+
+@media (max-width: 1000px){
+
+ 
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .header{
-        position: relative;
+    header{
+        
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
     }
-    .signup {
-        order: 1;
+    
+    
+    
+    .hebergements_activites{
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #F2F2F2;
     }
-    .hebergements-activites {
-        order: 2;
-    } 
-    .header_navlink a:hover{
+    .hebergements_activites a:hover{
         border-top: none;
-        border-bottom: 3px solid #0065FC;
-        width: 50%;
+        border-bottom: 2px solid #0065FC;
+       
+    }
+    .header_navlink{
+        padding-top: 30px;
+       
+    }
+
+    .titre_principal{
+        align-self:center;
+    }
+
+    .header_titre{
+        align-content: space-around;
+        align-items: flex-start;
+    }
+    #search_section{
+        justify-content: space-around;
+    }
+    .rechercher{
+        display: none;
+    }
+    .loupe{
+        display: block;
+        width: 40px;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
+    .loupe .fas{
+        color: white;
+    }
+    .titre_filtres{
+        align-self:flex-start;
+    }
+    .filtre_bouton{
+        
+        margin-bottom: 5px;
+    }
+    #filtres_section{
+        align-self: center;
+        flex-direction: column
+    }
+    .filtre{
+        flex-direction: column;
+        align-self: center;
     }
 
 
 
 
+    #hebergements_a_marseille{
+        margin-bottom: 50px;
+        order: 2;
+        background-color: white;
+        
+    }
+    #hebergement{
+        flex-direction: column ;
+        align-content: center;
+    }
+    .container_item{
+        flex-direction: column ;
+
+    }
+    .hebergements_les_plus_populaires{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #les_plus_populaires{
+        max-width: 805px;
+        order: 1;
+        border-radius:0%;
+    }
+
+    
+    #Activités_à_Marseille{
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    
+
+    .hebergement_populaire_contenu {
+        width: 145px;
+    }
+
+
+    .activite1, 
+    .activite2, 
+    .activite3, 
+    .activite4, 
+    .activite5, 
+    .activite6 {
+        max-width: 270px;
+       
+    }
+
+
+
+
+
+
+    footer{
+        flex-direction: column;
+        
+    }
+    .a_propos,
+    .nos_hebergements,
+    .assistance{
+        padding-bottom: 30px;
+        align-items: center;
+    }
 }
