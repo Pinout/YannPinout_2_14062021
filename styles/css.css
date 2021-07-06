@@ -2,26 +2,26 @@
 
 @font-face{
     font-family: "Raleway";
-    src: url("static/Raleway-Medium.ttf");
+    src: url("../static/Raleway-Medium.ttf");
   }
   
   @font-face{
     font-family: "Raleway-Thin";
-    src: url("static/Raleway-Thin.ttf");
+    src: url("../static/Raleway-Thin.ttf");
   }
   
   @font-face{
     font-family: "Raleway-Bold";
-    src: url("static/Raleway-Bold.ttf");
+    src: url("../static/Raleway-Bold.ttf");
   }
   
   * {
     font-family: "Raleway";
   }
 
+
 main{
     max-width: 1350px;
-    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -513,7 +513,7 @@ h3{
     margin-left: 20px;
 }
 
-@media screen and (min-width : 1300px) and (max-width : 2560px) {
+@media screen and (min-width : 1300px) and (max-width : 2500px) {
 
 
     .photo_activite11,
@@ -545,11 +545,6 @@ h3{
 
 /*********** Footer ***********/
 
-footer h2{
-    font-size: 1.1em;
-    padding-left: 0;
-}
-  
 footer{
     display: flex;
     flex-direction: row;
@@ -558,12 +553,13 @@ footer{
     padding: 20px;
     padding-left: 40px;
     padding-bottom: 20px;
-    border-radius: 20px;
-    max-width: 1220px;
+    width: 100%;
 }
 
 footer h2{
     padding-bottom: 20px;
+    font-size: 1.1em;
+    padding-left: 0;
 }
   
 footer a{
@@ -591,9 +587,7 @@ footer li:hover{
   
 /*********** Téléphones et tablettes ***********/
 
-
-
-@media (max-width: 700px){
+@media (max-width: 900px){
 
  
     main{
@@ -738,7 +732,6 @@ footer li:hover{
         max-height: 200px;
     }
     .hebergements_les_plus_populaires{
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
