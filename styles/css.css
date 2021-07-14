@@ -352,7 +352,7 @@ h3{
     font-style: normal;
 }
 
-.hebergement_montrer_plus{
+.hebergement_afficher_plus{
     font-weight: bold;
 }
 
@@ -513,8 +513,7 @@ h3{
     margin-left: 20px;
 }
 
-@media screen and (min-width : 900px) and (max-width : 2500px) {
-
+@media screen and (min-width : 1300px) and (max-width : 2500px) {
 
     .photo_activite11,
     .photo_activite44 {
@@ -587,16 +586,13 @@ footer li:hover{
   
 /*********** Téléphones et tablettes ***********/
 
-@media (max-width: 900px){
+@media (max-width: 899px){
 
  
-    main{
-        
+    main{ 
         margin-left: 0px;
         margin-right: 0px;
-        display: flex;
-        
-        
+        display: flex;    
     }
     header{
         display:flex;
@@ -606,7 +602,6 @@ footer li:hover{
         padding-top: 2px;
         padding-left: 5px;
         padding-right: 5px;
-
     }
     
     
@@ -627,8 +622,7 @@ footer li:hover{
         
     }
 
-    .header_navlink{
-       
+    .header_navlink{ 
         width: 50%;
         padding: 1.25rem;
     }
@@ -661,8 +655,7 @@ footer li:hover{
 
     .header_titre{
         align-content: space-around;
-        margin-top:16px;
-        
+        margin-top:16px;   
     }
 
     #search_section{
@@ -760,6 +753,7 @@ footer li:hover{
 
     .activites{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
     
@@ -792,8 +786,7 @@ footer li:hover{
     .photo_activite55, 
     .photo_activite66{
         width: 310px;
-        height: 112px;
-        
+        height: 112px;     
     }
     .photo_hebergement{
         max-width: 300px;
@@ -805,8 +798,7 @@ footer li:hover{
     footer{
         flex-direction: column;
         margin-top: 10px;
-        border-radius:0%;
-        
+        border-radius:0%;   
     }
     .a_propos,
     .nos_hebergements,
@@ -819,5 +811,82 @@ footer li:hover{
     }
     li{
         width: 600px;
+    }
+}
+
+
+@media screen and (min-width: 899px) and (max-width: 1259px){
+
+    #hebergement{
+        justify-content: center;
+    }
+    #les_plus_populaires{
+        order: 1;
+    }
+    #hebergements_a_marseille{
+        order: 2;
+        align-items: center;
+    }
+
+
+    #Activités_à_Marseille {
+        align-items: center;
+    }
+
+    .activites{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .activite1, 
+    .activite2, 
+    .activite3, 
+    .activite4, 
+    .activite5, 
+    .activite6 {
+        width: 310px;
+        height: 145px;
+        margin: 0px 70px 20px 0px;
+    }
+    .activite2et3, .activite5et6 {
+        flex-direction:  row;
+    }
+
+    .photo_activite1,
+    .photo_activite2,   
+    .photo_activite3,
+    .photo_activite4,
+    .photo_activite5,
+    .photo_activite6{
+        padding: 0px 0px 10px 0px;
+        
+    }
+    
+    .photo_activite11, 
+    .photo_activite22, 
+    .photo_activite33, 
+    .photo_activite44, 
+    .photo_activite55, 
+    .photo_activite66{
+        width: 310px;
+        height: 112px;     
+    }
+    .photo_hebergement{
+        max-width: 300px;
+        max-height: 130px;
+    }
+}
+
+@media screen and (min-width : 1260px) and (max-width : 1315px) {
+
+     #hebergement{
+        justify-content: center;
+    }
+     #les_plus_populaires{
+        order: 1;
+    }
+    #hebergements_a_marseille{
+        order: 2;
     }
 }
