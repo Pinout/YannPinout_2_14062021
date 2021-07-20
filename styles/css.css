@@ -72,7 +72,7 @@ header nav{
 .signup{
     color: #0065FC;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 50px;
     text-decoration: none;
 }
 a{
@@ -567,7 +567,7 @@ footer a{
 }
   
 footer ul{
-    padding-inline-start: 0;
+    padding: 0;
 }
   
 footer li{
@@ -593,6 +593,7 @@ footer li:hover{
         margin-left: 0px;
         margin-right: 0px;
         display: flex;    
+        width: 100%;
     }
     header{
         display:flex;
@@ -602,6 +603,7 @@ footer li:hover{
         padding-top: 2px;
         padding-left: 5px;
         padding-right: 5px;
+        width: 100%;
     }
     
     
@@ -610,11 +612,10 @@ footer li:hover{
         position: absolute;
         left: 0;
         top: 70px;
-        width: 100%;
+        width: 105%;
         display: flex;
         justify-content: center;
         border-bottom: 2px solid #F2F2F2;
-        padding-bottom:-9px;
     }
     .hebergements_activites a:hover{
         border-top:none;
@@ -746,7 +747,9 @@ footer li:hover{
         background-color: white;
         margin-top: 720px;
     }
-
+    #Activités_à_Marseille h1 {
+        margin-top: 2em;
+    }
     .hebergement_populaire_contenu {
         width: 145px;
     }
@@ -756,7 +759,9 @@ footer li:hover{
         flex-direction: column;
         justify-content: space-around;
     }
-    
+    .titre_activites {
+        margin-bottom: 2em;
+    }
     
     .activite1, 
     .activite2, 
@@ -832,6 +837,9 @@ footer li:hover{
     #Activités_à_Marseille {
         align-items: center;
     }
+    #Activités_à_Marseille h2 {
+        text-align: center;
+    }
 
     .activites{
         display: flex;
@@ -889,4 +897,27 @@ footer li:hover{
     #hebergements_a_marseille{
         order: 2;
     }
+}
+/*
+@media screen and (min-width : 650px) and (max-width : 899px) {
+
+    header {
+        width: 100%;
+    }
+    .hebergements_activites {
+        width: 100%;
+    }
+
+
+} */
+
+@media screen and (max-width:  500px) {
+
+    main {
+        width: 150%;
+    }
+    .hebergements_activites {
+        width: 40rem;
+    }
+
 }
