@@ -603,7 +603,7 @@ footer li:hover{
         padding-top: 2px;
         padding-left: 5px;
         padding-right: 5px;
-        width: 100%;
+        width: 37rem;
     }
     
     
@@ -820,13 +820,14 @@ footer li:hover{
 }
 
 
-@media screen and (min-width: 899px) and (max-width: 1259px){
+@media screen and (min-width: 899px) and (max-width: 1370px){
 
     #hebergement{
         justify-content: center;
     }
     #les_plus_populaires{
         order: 1;
+        margin-right: 1em;
     }
     #hebergements_a_marseille{
         order: 2;
@@ -844,6 +845,7 @@ footer li:hover{
     .activites{
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
     
     
@@ -853,14 +855,18 @@ footer li:hover{
     .activite4, 
     .activite5, 
     .activite6 {
-        width: 310px;
-        height: 145px;
-        margin: 0px 70px 20px 0px;
-    }
-    .activite2et3, .activite5et6 {
-        flex-direction:  row;
-    }
+        width: 48rem;
+        height: 11rem;
+        margin: 1em;
 
+    }
+    .activite2et3 {
+        flex-direction: column;
+    }
+    
+    .activite5et6 {
+        flex-direction: column;
+    }
     .photo_activite1,
     .photo_activite2,   
     .photo_activite3,
@@ -877,8 +883,8 @@ footer li:hover{
     .photo_activite44, 
     .photo_activite55, 
     .photo_activite66{
-        width: 310px;
-        height: 112px;     
+        width: 48rem;
+        height: 10rem;     
     }
     .photo_hebergement{
         max-width: 300px;
@@ -886,18 +892,6 @@ footer li:hover{
     }
 }
 
-@media screen and (min-width : 1260px) and (max-width : 1315px) {
-
-     #hebergement{
-        justify-content: center;
-    }
-     #les_plus_populaires{
-        order: 1;
-    }
-    #hebergements_a_marseille{
-        order: 2;
-    }
-}
 /*
 @media screen and (min-width : 650px) and (max-width : 899px) {
 
