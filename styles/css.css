@@ -402,7 +402,7 @@ h3{
     display: flex;
     background-color: white;
     border: 3px solid white;
-    border-radius: 1.25rem;
+    border-radius: 1.7rem;
     padding: 2px 2px 2px 2px;
     transition-duration: 0.1s;
     cursor: pointer;
@@ -416,8 +416,8 @@ h3{
     width: 132px;
     height: 132px;
     object-fit: cover;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
 }
 
 .hebergement_populaire_contenu{
@@ -522,34 +522,7 @@ footer h2 {
 }
 
 
-@media screen and (min-width : 1300px) and (max-width : 2500px) {
 
-    .photo_activite11,
-    .photo_activite44 {
-        width: 301px;
-        height: 390px;
-    }
-
-    .photo_activite22 {
-        width: 304px;
-        height: 183px;
-    }
-
-    .photo_activite33 {
-        width: 304px;
-        height: 112px;
-    }
-
-    .photo_activite55 {
-        width: 304px;
-        height: 141px;
-    }
-
-    .photo_activite66 {
-        width: 304px;
-        height: 155px;
-    }
-}
 
 /*********** Footer ***********/
 
@@ -595,6 +568,35 @@ footer li:hover{
   
 /*********** Téléphones et tablettes ***********/
 
+@media screen and (min-width : 1300px) and (max-width : 2500px) {
+
+    .photo_activite11,
+    .photo_activite44 {
+        width: 301px;
+        height: 390px;
+    }
+
+    .photo_activite22 {
+        width: 304px;
+        height: 183px;
+    }
+
+    .photo_activite33 {
+        width: 304px;
+        height: 112px;
+    }
+
+    .photo_activite55 {
+        width: 304px;
+        height: 141px;
+    }
+
+    .photo_activite66 {
+        width: 304px;
+        height: 155px;
+    }
+}
+
 @media (max-width: 899px){
 
     body {
@@ -614,9 +616,11 @@ footer li:hover{
         padding-top: 2px;
         padding-left: 5px;
         padding-right: 5px;
-        width: 100%;
+        width: 110%;
     }
-    
+    #logo img {
+        width: 150%;
+    }
     .hebergements_les_plus_populaires a {
         width: 100%;
     }
@@ -625,7 +629,7 @@ footer li:hover{
         position: absolute;
         left: 0;
         top: 70px;
-        width: 105%;
+        width: 119%;
         display: flex;
         justify-content: center;
         border-bottom: 2px solid #F2F2F2;
@@ -636,6 +640,7 @@ footer li:hover{
     }
     .titre_hebergements_a_marseille {
         font-size: 1.7rem;
+        margin-left: 2rem;
     }
 
     .header_navlink{ 
@@ -647,12 +652,12 @@ footer li:hover{
     }
     header nav a {
          margin-left: 0px; 
-         font-size: 1.5rem;
+         font-size: 2rem;
     }
 
 
     h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: left;
         margin-bottom: auto;
     }
@@ -676,11 +681,12 @@ footer li:hover{
         margin-top: 25px;
     }
     .titre_enplein p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .header_titre{
         align-content: space-around;
-        margin-top:16px;   
+        margin-top: 40px;
+        margin-left: 2rem;   
     }
 
     #search_section{
@@ -693,10 +699,15 @@ footer li:hover{
     .gps_logo,
     .text_field,
     .loupe {
-        height: 70px;
+        height: 74px; 
     }
     .gps_logo{
-        width: 70px;
+        width: 7rem;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .gps_logo .fas {
+        font-size: 2rem;
     }
     .text_field{
         width : 90%;
@@ -707,17 +718,21 @@ footer li:hover{
     }
     .loupe{
         display: block;
-        width: 70px;
+        width: 6rem;
         background-color: #0065FC;
         color: white;
         font-weight: bold;
         border: none;
-        border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+        border-radius: 1.7rem;
     }
     .loupe .fas{
         color: white;
+        font-size: 1.6rem;
     }
-
+    
+    #filtres_section{
+        margin-left: 2rem;
+    }
     #filtres_section p {
         font-size: 1.8rem;
     }
@@ -743,6 +758,7 @@ footer li:hover{
 
     .city_info {
         align-items: flex-start;
+        margin-left: 2rem;
     }
 
 
@@ -762,11 +778,13 @@ footer li:hover{
     .container_item{
         display:flex;
         flex-direction: column;
-        align-content: space-around;
+        align-content: stretch;
+        margin-left: 2rem;
 
     }
     .box_carte{
         max-width: 100%;
+        height: 14rem;
     }
     .hebergements_les_plus_populaires{
         flex-wrap: wrap;
@@ -777,11 +795,12 @@ footer li:hover{
         max-width: 805px;
         order: 1;
         border-radius:0%;
-        height: 670px;
-        width: 100%;
+        height: 740px;
+        width: 105%;
     }
     .titre_les_plus_populaires {
         font-size: 1.7rem;
+        margin-left: 2rem;
     }
     .titre_populaire_contenu {
         text-align: left;
@@ -790,25 +809,31 @@ footer li:hover{
         text-align: left;
     }
     .photo_populaire{
-        width: 30em;
-        height: 173px;
+        width: 30rem;
+        height: 12rem;
+    }
+    .box_populaire_carte {
+        margin-left: 2rem;
+        align-items: center;
     }
     .hebergement_afficher_plus {
         font-size: 1.5rem;
+        margin-left: 2rem;
     }
     
     #Activités_à_Marseille{
         align-items: center;
         flex-direction: column;
         background-color: white;
-        margin-top: 720px;
+        margin-top: 893px;
     }
     #Activités_à_Marseille h1 {
         margin-top: 2em;
         font-size: 1.7rem;
+        margin-left: 2rem;
     }
     #Activités_à_Marseille h2 {
-        font-size: 1.25rem ;
+        font-size: 1.4rem ;
     }
     .titre_activite1,
     .titre_activite2,
@@ -824,7 +849,7 @@ footer li:hover{
 
     .activites{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
     }
     .titre_activites {
@@ -838,11 +863,13 @@ footer li:hover{
     .activite4, 
     .activite5, 
     .activite6 {
-        width: 100%;
-        height: 145px;
-        
+        width: 96%;
+        height: 14rem;
+        margin-left: 2rem;
     }
-
+    .activite2et3, .activite5et6 {
+        width: 100%;
+    }
     .photo_activite1,
     .photo_activite2,   
     .photo_activite3,
@@ -860,10 +887,11 @@ footer li:hover{
     .photo_activite55, 
     .photo_activite66{
         width: 100%;
-        height: 112px;     
+        height: 12rem;     
     }
     .photo_hebergement{
        width: 100%;
+       height: 8rem;
     }
     .hebergement_etoiles {
         text-align: left;
@@ -874,7 +902,7 @@ footer li:hover{
         flex-direction: column;
         margin-top: 10px;
         border-radius:0%; 
-        width: 100%;  
+        width: 103%;  
     }
     .a_propos,
     .nos_hebergements,
@@ -884,9 +912,11 @@ footer li:hover{
     }
     footer h2{
         text-align: left;
+        font-size: 1.7rem;
     }
     li{
         width: 600px;
+        font-size: 1.5rem;
     }
 }
 
@@ -899,6 +929,7 @@ footer li:hover{
     #les_plus_populaires{
         order: 1;
         margin-right: 1em;
+        width: 100%;
     }
     #hebergements_a_marseille{
         order: 2;
@@ -961,6 +992,9 @@ footer li:hover{
         max-width: 300px;
         max-height: 130px;
     }
+    footer {
+        justify-content: center;
+    }
 }
 
 
@@ -970,14 +1004,15 @@ footer li:hover{
         width: 160%;
     }
     .hebergements_activites {
-        width: 175%;
+        width: 185%;
+        margin-top: 2rem;
     }
     #Activités_à_Marseille h1 {
         text-align: left;
     }
 
     footer {
-        width: 155%;
+        width: 160%;
     }
 
 }
