@@ -793,11 +793,11 @@ footer li:hover{
     }
 
     #les_plus_populaires{
-        max-width: 845px;
+        max-width: 846px;
         order: 1;
         border-radius:0%;
         height: 740px;
-        width: 105%;
+        width: 111%;
     }
     .titre_les_plus_populaires {
         font-size: 1.7rem;
